@@ -26,7 +26,6 @@
     "gulp-sass": "^2.0.4",
     "gulp-standard": "^4.5.3",
     "lodash-node": "^3.10.0",
-    "react": "^0.13.3",
     "watchify": "^3.3.0"
   }
 }
