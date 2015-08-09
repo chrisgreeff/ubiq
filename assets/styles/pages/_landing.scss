@@ -23,6 +23,19 @@
   margin-top: 10px;
 }
 
+.uq-landing-subscriptions {
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 10px;
+
+  .uq-landing-subscriptions-count {
+    color: #0077FF;
+    font-weight: 400;
+  }
+}
+
 // Mailchimp
 #mc_embed_signup {
   margin-top: 40px;
@@ -44,7 +57,7 @@
   outline: none;
 
   &:focus {
-    border: 1px solid #0077FF;
+    box-shadow: 0 0 1px 1px #0077FF;
   }
 }
 
