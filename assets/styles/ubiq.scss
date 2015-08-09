@@ -1,1 +1,6 @@
-@import "global/base"
+@import "vendor/bower";
+
+@import "global/fonts";
+@import "global/base";
+
+@import "pages/landing"

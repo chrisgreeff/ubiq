@@ -1,0 +1,59 @@
+.uq-landing {
+  height: 100%;
+  color: #FFF;
+}
+
+.uq-landing-logo {
+  margin-top: 135px;
+  text-align: center;
+}
+
+.uq-landing-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 45px;
+  margin-top: 100px;
+}
+
+.uq-landing-sub-header {
+  font-style: italic;
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+// Mailchimp
+#mc_embed_signup {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#mc-embedded-subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mce-EMAIL {
+  width: 365px;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 300;
+  border: none;
+  outline: none;
+
+  &:focus {
+    border: 1px solid #0077FF;
+  }
+}
+
+#mc-embedded-subscribe {
+  font-weight: 300;
+  background-color: #0077FF;
+  color: #FFF;
+  padding: 15px;
+  outline: none;
+  border-width: 0;
+  width: 200px;
+}
