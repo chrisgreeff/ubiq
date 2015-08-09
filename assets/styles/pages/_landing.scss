@@ -10,6 +10,7 @@
 
 .uq-landing-content {
   text-align: center;
+  padding: 20px;
 }
 
 .uq-landing-logo {
@@ -119,4 +120,36 @@
   outline: none;
   border-width: 0;
   width: 200px;
+}
+
+// Responsive
+@media (max-width: 600px) {
+  .uq-landing {
+    align-items: flex-start;
+  }
+
+  .uq-landing-logo {
+    margin-top: 40px;
+  }
+
+  .uq-landing-header {
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  #mc_embed_signup_scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  #mce-EMAIL {
+    width: 100%;
+  }
+
+  #mc-embedded-subscribe {
+    width: 100%;
+    margin-top: 5px;
+  }
 }
