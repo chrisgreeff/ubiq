@@ -6,6 +6,7 @@
   display:flex;
   align-items: center;
   justify-content: center;
+  animation: fade-in 0.5s ease-in-out;
 }
 
 .uq-landing-content {
@@ -22,6 +23,12 @@
   font-size: 45px;
   margin-top: 100px;
   font-weight: 600;
+  position: relative;
+}
+
+@keyframes fade-in {
+  0% {opacity: 0}
+  100% {opacity: 1}
 }
 
 .uq-landing-sub-header {
@@ -46,6 +53,7 @@
 }
 
 .uq-landing-play {
+  opacity: 0.6;
   width: 50px;
   height: 50px;
   background-color: #FFF;
@@ -56,6 +64,12 @@
   margin: 100px 0;
   outline: none;
   font-size: 18px;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  &:hover {
+    opacity: 1;
+    transform: scale(1.2);
+  }
 
   .fa-play {
     margin-left: 4px;
