@@ -39,8 +39,4 @@
       togglePlay()
     }
   })
-
-  if (isMobile) {
-    $('.ubiq-logo-container').addClass('logo-hide')
-  }
 }())
