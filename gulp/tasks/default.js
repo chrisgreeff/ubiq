@@ -1,3 +1,3 @@
 import gulp from 'gulp'
 
-gulp.task('default', ['sass', 'standard', 'watch'])
+gulp.task('default', ['styles', 'scripts', 'vendor', 'standard', 'watch'])
