@@ -121,14 +121,13 @@ body {
 
 .uq-landing-video-fullscreen-container {
   display: none;
+  left: -100vh;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
   z-index: 100;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.9); }
@@ -136,7 +135,9 @@ body {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    top: 0;
+    left: 0; }
 
 .uq-landing-video-fullscreen {
   height: 80%;
