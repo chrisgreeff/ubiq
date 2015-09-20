@@ -120,10 +120,6 @@
   border: none;
   outline: none;
   color: #414141;
-
-  &:focus {
-    box-shadow: 0 0 1px 1px #0077FF;
-  }
 }
 
 #mc-embedded-subscribe {
@@ -139,6 +135,7 @@
 #mc_embed_signup_scroll {
   border-radius: 3px;
   overflow: hidden;
+  display: flex;
 }
 
 // Responsive
