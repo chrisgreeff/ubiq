@@ -5,13 +5,27 @@
   <meta name="viewport" content="width=device-width">
   <title>Ubiq</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="dist/css/ubiq.css">
   <link rel="stylesheet" type="text/css" href="bower_components/normalize.css/normalize.css">
+  <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
+  <script src="dist/js/vendor.js"></script>
 </head>
 <body>
+  <div class="uq-landing-video-fullscreen-container">
+    <a class="uq-landing-video-fullscreen-close fa fa-close" href="javascript:void(0)"></a>
+    <iframe id="uq-landing-video-fullscreen-iframe"
+      src="https://player.vimeo.com/video/138921506?api=1&player_id=uq-landing-video-fullscreen-iframe"
+      frameborder="0"
+      height="80%"
+      width="100%"
+      webkitallowfullscreen
+      mozallowfullscreen
+      allowfullscreen>
+    </iframe>
+  </div>
   <div class="uq-landing-video-container">
     <video class="uq-landing-video" src="assets/videos/landing-loop3.mp4" autoplay preload="auto" muted loop></video>
   </div>
@@ -36,5 +50,6 @@
       <div class="uq-landing-subscriptions">Join <span class="uq-landing-subscriptions-count">645</span> other early birdies</div>
     </div>
   </div>
+  <script src="dist/js/ubiq.js"></script>
 </body>
 </html>
