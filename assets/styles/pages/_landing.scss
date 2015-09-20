@@ -116,6 +116,11 @@
   &.visible { display: flex; }
 }
 
+.uq-landing-video-fullscreen {
+  height: 80%;
+  width: 100%;
+}
+
 .uq-landing-video-fullscreen-close {
   font-size: 20px;
   position: fixed;
