@@ -113,6 +113,12 @@ body {
   height: 100%;
   opacity: 0.35; }
 
+.uq-landing-video-container--mobile {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background: url("../../assets/images/mobile-bg-media.png"); }
+
 .uq-landing-video {
   position: fixed;
   right: 0;
