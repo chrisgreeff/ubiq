@@ -1,5 +1,5 @@
-$(function () {
-  var player = $f($('#uq-landing-video-fullscreen-iframe')[0]);
+$(document).ready(function() {
+  var player = $f($('#uq-landing-video-fullscreen-iframe')[0])
 
   $('.uq-landing-play').on('click', function() {
     $('.uq-landing-video-fullscreen-container').addClass('visible')
