@@ -4,6 +4,7 @@
   var fullscreenCloseButton = $('.uq-landing-video-fullscreen-close')
   var playButton = $('.uq-landing-play')
   var isPlaying = false
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
   function openFullscreen () {
     fullscreenPlayerContainer.addClass('visible')
@@ -38,4 +39,8 @@
       togglePlay()
     }
   })
+
+  if (isMobile) {
+    $('.ubiq-logo-container').addClass('logo-hide')
+  }
 }())
