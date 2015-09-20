@@ -17,10 +17,7 @@
     isPlaying = false
   }
 
-  playButton.on('click', openFullscreen)
-  fullscreenCloseButton.on('click', closeFullscreen)
-
-  fullscreenPlayer.on('click', function() {
+  function togglePlay () {
     if (isPlaying) {
       fullscreenPlayer[0].pause()
       isPlaying = false
@@ -28,11 +25,17 @@
       fullscreenPlayer[0].play()
       isPlaying = true
     }
-  })
+  }
+
+  playButton.on('click', openFullscreen)
+  fullscreenCloseButton.on('click', closeFullscreen)
+  fullscreenPlayer.on('click', togglePlay)
 
   $(document).on('keyup', function (event) {
-    if (event.keyCode === 27) {
+    if (event.keyCode === 27) { // ESC
       closeFullscreen()
+    } else if (event.keyCode === 32) { // SPACE
+      togglePlay()
     }
   })
 }())
