@@ -1,13 +1,38 @@
 (function() {
-  var fullscreenPlayer = $('.uq-landing-video-fullscreen')[0]
+  var fullscreenPlayerContainer = $('.uq-landing-video-fullscreen-container')
+  var fullscreenPlayer = $('.uq-landing-video-fullscreen')
+  var fullscreenCloseButton = $('.uq-landing-video-fullscreen-close')
+  var playButton = $('.uq-landing-play')
+  var isPlaying = false
 
-  $('.uq-landing-play').on('click', function() {
-    $('.uq-landing-video-fullscreen-container').addClass('visible')
-    fullscreenPlayer.play()
+  function openFullscreen () {
+    fullscreenPlayerContainer.addClass('visible')
+    fullscreenPlayer[0].play()
+    isPlaying = true
+  }
+
+  function closeFullscreen () {
+    fullscreenPlayerContainer.removeClass('visible')
+    fullscreenPlayer[0].load()
+    isPlaying = false
+  }
+
+  playButton.on('click', openFullscreen)
+  fullscreenCloseButton.on('click', closeFullscreen)
+
+  fullscreenPlayer.on('click', function() {
+    if (isPlaying) {
+      fullscreenPlayer[0].pause()
+      isPlaying = false
+    } else {
+      fullscreenPlayer[0].play()
+      isPlaying = true
+    }
   })
 
-  $('.uq-landing-video-fullscreen-close').on('click', function() {
-    $('.uq-landing-video-fullscreen-container').removeClass('visible')
-    fullscreenPlayer.load()
+  $(document).on('keyup', function (event) {
+    if (event.keyCode === 27) {
+      closeFullscreen()
+    }
   })
 }())
