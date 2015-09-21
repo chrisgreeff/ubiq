@@ -237,22 +237,22 @@ body {
 @-webkit-keyframes logo {
   0% {
     opacity: 0;
-    -webkit-transform: rotateY(90deg) translateY(20px) skewY(0deg);
-            transform: rotateY(90deg) translateY(20px) skewY(0deg); }
+    -webkit-transform: rotateY(140deg) translateY(20px) skewY(-20deg);
+            transform: rotateY(140deg) translateY(20px) skewY(-20deg); }
   100% {
     opacity: 1;
-    -webkit-transform: rotateY(0deg) translateY(0px) skewY(-10deg);
-            transform: rotateY(0deg) translateY(0px) skewY(-10deg); } }
+    -webkit-transform: rotateY(0deg) translateY(0px) skewY(0deg);
+            transform: rotateY(0deg) translateY(0px) skewY(0deg); } }
 
 @keyframes logo {
   0% {
     opacity: 0;
-    -webkit-transform: rotateY(90deg) translateY(20px) skewY(0deg);
-            transform: rotateY(90deg) translateY(20px) skewY(0deg); }
+    -webkit-transform: rotateY(140deg) translateY(20px) skewY(-20deg);
+            transform: rotateY(140deg) translateY(20px) skewY(-20deg); }
   100% {
     opacity: 1;
-    -webkit-transform: rotateY(0deg) translateY(0px) skewY(-10deg);
-            transform: rotateY(0deg) translateY(0px) skewY(-10deg); } }
+    -webkit-transform: rotateY(0deg) translateY(0px) skewY(0deg);
+            transform: rotateY(0deg) translateY(0px) skewY(0deg); } }
 
 @-webkit-keyframes logo-text {
   0% {

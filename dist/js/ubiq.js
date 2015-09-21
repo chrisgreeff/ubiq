@@ -6,7 +6,6 @@
   var ubiqBackgroundMedia = $('.uq-landing-video-container')
   var playButton = $('.uq-landing-play')
   var isPlaying = false
-  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
   window.mobilecheck = function() {
     var check = false;
