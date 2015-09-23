@@ -47,6 +47,7 @@
   playButton.on('click', openFullscreen)
   fullscreenCloseButton.on('click', closeFullscreen)
   fullscreenPlayer.on('click', togglePlay)
+  fullscreenPlayer.on('ended', closeFullscreen)
 
   $(document).on('keyup', function (event) {
     if (event.keyCode === 27) { // ESC
