@@ -28,5 +28,10 @@
     "gulp-standard": "^4.5.3",
     "lodash-node": "^3.10.0",
     "watchify": "^3.3.0"
+  },
+  "standard": {
+    "global": [
+      "$"
+    ]
   }
 }
