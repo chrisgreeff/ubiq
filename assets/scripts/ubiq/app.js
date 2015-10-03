@@ -8,8 +8,9 @@ angular.module('ubiq.templates', [])
 angular.module('ubiq.vendor', [])
 
 require('../cache/ubiq-templates')
-require('./pages/pages')
+require('./services/services')
 require('./config/config')
+require('./pages/pages')
 require('./global/controllers/controllers')
 require('./vendor-modules/vendor-modules')
 
