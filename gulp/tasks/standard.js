@@ -1,9 +1,12 @@
+'use strict'
+
 import gulp from 'gulp'
 import standard from 'gulp-standard'
 
 const STANDARD_GLOB = [
   './**/*.js',
   '!./node_modules/**/*',
+  '!./bower_components/**/*',
   '!./assets/scripts/vendor/**/*',
   '!./assets/scripts/cache/**/*'
 ]

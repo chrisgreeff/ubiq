@@ -1,3 +1,6 @@
-import gulp from 'gulp'
+'use strict'
 
-gulp.task('default', ['build', 'watch'])
+import gulp from 'gulp'
+import runSequence from 'run-sequence'
+
+gulp.task('default', () => runSequence('build', ['serve', 'watch']))

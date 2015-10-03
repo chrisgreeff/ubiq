@@ -1,3 +1,5 @@
+'use strict'
+
 import gulp from 'gulp'
 import templateCache from 'gulp-angular-templatecache'
 
